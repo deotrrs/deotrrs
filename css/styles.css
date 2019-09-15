@@ -1,0 +1,386 @@
+
+.app {
+    position: relative;
+}
+ @media only screen and (min-width: 992px){  
+    .navbar-collapse{
+        display:block;
+    }
+ } 
+
+ .app-btn{
+    display:block;
+    padding-top: 13px;
+    text-align: center;
+    border:solid 2px;
+	float: center;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    color:black;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	
+ }
+
+.app-header {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 10;
+    width: 100%;
+}
+
+.app-header-active{
+    padding: 10px;
+    position: fixed;
+    background-color: black; 
+    /* opacity: 0.2; */
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+    width: 100%;
+    color:white;
+}
+.app-header-active .app-header__navigation ul li a {
+    color:white;
+}
+.app-header-active .app-header__navigation ul li a:visited{
+    color:white;
+}
+.app-header__navigation {
+    font-size: 16px;
+}
+.app-header__navigation ul{    
+    
+    list-style: none;
+    margin: 0;
+    /* padding: 10px;     */
+    float: right;
+}
+.app-header__navigation ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.app-header__navigation ul li a {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:black
+    
+}
+.app-header__navigation ul li a:hover{
+    background-color: gray;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+}
+.app-header__navigation ul li a:visited a:hover{
+    color:white;
+}
+.app-header__navigation ul li a:visited{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:black;
+    
+}
+
+
+/**
+*
+footer
+*/
+.app-footer{
+    height:370px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top:40px;
+    z-index: -1;
+    overflow: hidden; 
+}
+.app-footer h1{
+    color:black;
+    text-align:center;
+    font-size:40px;
+    font-weight: 700;
+}
+.app-footer__navigation {
+    font-size: 16px;
+}
+.app-footer__navigation ul {
+    list-style: none;
+    margin: 0;       
+}
+.app-footer__navigation ul li {
+    display: inline-block;
+    /* padding-inline-start: 20px; */
+    /* padding-inline-end: 20px;   */
+    
+}
+.app-footer__navigation ul li a {
+    display: inline-block;
+    
+}
+.app-footer__navigation ul li a:visited{
+    display: inline-block;
+    color:black;
+    
+}
+.app-footer .section-container{
+    text-align:center;
+}
+.app-footer .app-footer__navigation{
+    padding:20px;
+    text-align:center;
+}
+.app-footer p{
+    background-color: black; 
+    padding-top:30px;
+    text-align:center;
+    height:300px;
+}
+.app-footer__cr{
+    color:white;
+    padding-top:30px;
+}
+section{
+    height:500px;
+}
+.section-heading{
+    text-align: center;
+    padding-bottom:20px;
+    padding-top: 5px;
+	font-size: 55px;
+	font-family: 'Roboto Slab', serif;
+}
+.section2{
+    /* background-color:rgba(7, 1, 94, 0.973); */
+    height:40%;
+    overflow:hidden;
+    padding-top: 40px;
+}
+.section2 .section-heading{
+    color:black;
+    text-align: center;
+}
+.section2 p{
+    color:white;
+    margin: auto;
+}
+.section3{
+    height:inherit;
+    padding-top:50px;
+    color:black;
+    /* overflow: hidden; */
+}
+.section3 h1{
+    font-size:2.5rem
+}
+.section3 img{
+    display: flex;
+    margin:auto;
+    /* max-width:400px; */
+}
+.section4{
+    height:inherit;
+    padding-top:20px;
+	height:40%;
+    overflow:hidden;
+}
+@media ( min-width: 1200px){
+    .navbar-toggler {
+    display: none;
+    } 
+}
+@media screen and ( max-width: 1200px){
+    .form-group{
+        text-align: center;
+    }
+   
+}
+
+/**
+ * Hero
+ */
+.hero{
+    height: 500px;
+    padding-top: 181px;
+}
+
+.hero-background{
+    background-image: url('../assets/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    overflow: hidden;
+	width: 85%;
+	margin-left: 8%;
+	
+}
+.hero-object > img{
+    height: 750px;
+    object-fit: cover;
+}
+.hero-text{
+    color:white;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    letter-spacing: -1px;
+	margin-top: -90px;
+}
+.hero-text .app-btn{
+    margin:auto;
+}
+.hero-text_spam{
+    opacity: 0.5;
+}
+.hero-text_heading{
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	font-family: Franklin Gothic Heavy;
+	font-size: 50px;
+	margin-top: -325px;
+	margin-left: -10px;
+}
+
+.hero-box{
+	border: 15px;
+	padding: 15px;
+	width: 40%;
+	background-color: white;
+	margin-left: 29%;
+	height: 505px;
+	margin-top: -95px;
+}
+
+/**
+*mobile
+*/
+
+@media ( min-width: 991px){
+    .navbar-toggler {
+    display: none;
+    }  
+}
+@media ( max-width: 991px ) {
+    .app-header-active{
+        padding: 10px;
+        position: fixed;
+        background-color: black; 
+        /* opacity: 0.2; */
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        z-index: 1;
+        width: 100%;
+    }
+    .app-header__navigation {
+        font-size: 10px;
+    }
+    .app-header__navigation ul{    
+        
+        list-style: none;
+        margin: 0;
+        /* padding: 10px;     */
+        float: right;
+    }
+    .app-header__navigation ul li {
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .app-header__navigation ul li a {
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 2px;
+        
+    }
+}
+.card__paragraph > p {
+    font-size:20px;
+    font-weight: 600;
+	color: black;
+}
+
+.card__container {
+	margin-top: 7%;
+	border: 15px;
+	padding: 30px;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	text-align: center;
+}
+
+/* PARAGRAPH */
+
+.paragraph{
+	text-align: center;
+	color: black;
+}
+
+
+/* FONT SIZE */
+
+.fontOne{
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.fontTwo{
+	font-size: 15px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.fontAboutMe{
+	font-size: 50px;
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	text-align: center;
+	margin-top: 5%;
+	font-weight: bold;
+}
+
+.fontGallery{
+	font-size: 50px;
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	text-align: center;
+	margin-top: 5%;
+	font-weight: bold;
+}
+
+.fontContact{
+	font-size: 50px;
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	text-align: center;
+	margin-top: 5%;
+	font-weight: bold;
+}
+.grid figure{
+    z-index:-1;
+}
+.about-card{
+    height: 350px;
+    width: auto;
+}
+.grid figcaption > p{
+    color:black;
+}
+.team__img{
+    width:100%;
+}
+.team__img >img{
+    width:220px;
+    display:inline;
+
+}
